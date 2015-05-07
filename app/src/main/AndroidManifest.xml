@@ -13,8 +13,8 @@
         </activity>
         <activity
             android:name=".SplashActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:label="@string/title_activity_spalsh" >
+            android:label="@string/title_activity_spalsh"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,6 +24,14 @@
         <activity
             android:name=".usersearchpage"
             android:label="@string/title_activity_usersearchpage" >
+        </activity>
+        <activity
+            android:name=".caretaker"
+            android:label="@string/title_activity_caretaker" >
+        </activity>
+        <activity
+            android:name=".Addlistings"
+            android:label="@string/title_activity_addlistings" >
         </activity>
     </application>
 
