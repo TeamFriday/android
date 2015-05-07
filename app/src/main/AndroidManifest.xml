@@ -25,6 +25,18 @@
             android:name=".LoginActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:label="@string/title_activity_login" >
+            </activity>
+        <activity
+            android:name=".usersearchpage"
+            android:label="@string/title_activity_usersearchpage" >
+        </activity>
+        <activity
+            android:name=".caretaker"
+            android:label="@string/title_activity_caretaker" >
+        </activity>
+        <activity
+            android:name=".Addlistings"
+            android:label="@string/title_activity_addlistings" >
         </activity>
     </application>
 
