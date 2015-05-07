@@ -12,7 +12,7 @@ import android.view.MenuItem;
 public class SplashActivity extends ActionBarActivity {
 
     //splash screen time
-    private static int SPLASH_DURATION = 5000;
+    private static int SPLASH_DURATION = 3000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +32,7 @@ public class SplashActivity extends ActionBarActivity {
             public void run() {
                 // This method will be executed once the timer is over
                 // Start your app main activity
-                Intent i = new Intent(SplashActivity.this, MainActivity.class);
+                Intent i = new Intent(SplashActivity.this, LoginActivity.class);
                 startActivity(i);
 
                 // close this activity
