@@ -12,7 +12,7 @@ import android.view.MenuItem;
 public class SplashActivity extends ActionBarActivity {
 
     //splash screen time
-    private static int SPLASH_DURATION = 3000;
+    private static int SPLASH_DURATION = 5000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
