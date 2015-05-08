@@ -1,140 +1,77 @@
 package com.example.festus.househunterapp;
 
 import android.app.Activity;
-import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
-import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Properties;
 
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link AllListingFragment.OnFragmentInteractionListener} interface
+ /** {@link AllListingFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link AllListingFragment#newInstance} factory method to
- * create an instance of this fragment.
+ * Use the {@link AllListingFragment#newInstance} factory method to*/
+ /** create an instance of this fragment.
  */
 public class AllListingFragment extends Fragment {
-    private RecyclerView rv;
-    /*FileAdapter adapter;*/
-    private ArrayList<Properties> properties;
-    public class Properties {
-        String size;
-        String location;
-        int imageId;
+     private RecyclerView rv;
+     private ArrayList<com.example.festus.househunterapp.Properties> properties;
 
-        Properties(String size, String location, int imageId) {
-            this.size =size;
-            this.location =location;
-            this.imageId =imageId;
+     @Override
+     protected void onCreate(Bundle savedInstanceState) {
+         super.onCreate(savedInstanceState);
+         setContentView(R.layout.fragment_all_listing);
+         rv = (RecyclerView) rootView.findViewById(R.id.rv);
 
-        }
+         LinearLayoutManager llm = new LinearLayoutManager(this);
+         rv.setLayoutManager(llm);
 
 
+         initializeData();
+         initializeAdapter();
+     }
 
-    }
-
-    private void initializeAdapter() {
-        RVAdapter adapter;
-        adapter = new RVAdapter(properties);
-        rv.setAdapter(adapter);
-    }
-
-
-    private void initializeData() {
-        properties = new ArrayList<>();
-        properties.add(new Properties("The tortoise", "This story is about ...", R.drawable.images));
-        properties.add(new Properties("The three sisters", "IN the village of Kinga there ...", R.drawable.img1));
-        properties.add(new Properties("Cinderella", "A story is told of a fare lady ...", R.drawable.img4));
-        properties.add(new Properties("The tortoise", "This story is about ...", R.drawable.img2));
-        properties.add(new Properties("The three sisters", "IN the village of Kinga there ..", R.drawable.img3));
-        properties.add(new Properties("Cinderella", "A story is told of a fare lady ...", R.drawable.img5));
+     private void initializeAdapter() {
+         recylerview.RVAdapter adapter;
+         adapter = new RVAdapter(properties);
+         rv.setAdapter(adapter);
+     }
 
 
-    }
-}
-public class RVAdapter extends RecyclerView.Adapter<RVAdapter.PersonViewHolder> {
-    private ArrayList<Properties> properties;
-
-
-    public  class PersonViewHolder extends RecyclerView.ViewHolder {
-            CardView cv;
-            TextView textView;
-            TextView textView2;
-            ImageView imageView;
-
-            PersonViewHolder(View itemView) {
-                super(itemView);
-                cv = (CardView) itemView.findViewById(R.id.cv);
-                textView = (TextView) itemView.findViewById(R.id.textView);
-                textView2 = (TextView) itemView.findViewById(R.id.textView2);
-                imageView = (ImageView) itemView.findViewById(R.id.imageView);
+     private void initializeData() {
+         properties = new ArrayList<>();
+         properties.add(new com.example.festus.househunterapp.Properties("Tyson properties", "2 bedrooms", R.drawable.img1));
+         properties.add(new com.example.festus.househunterapp.Properties("kirichwa heights", "5 bedrooms", R.drawable.img2));
+         properties.add(new com.example.festus.househunterapp.Properties("Cinderella", "A story is told of a fare lady ...", R.drawable.img3));
+         properties.add(new com.example.festus.househunterapp.Properties("The tortoise", "This story is about ...", R.drawable.img4));
+         properties.add(new com.example.festus.househunterapp.Properties("The three sisters", "IN the village of Kinga there ..", R.drawable.img5));
 
 
 
-            }
-        }
-    RVAdapter(ArrayList<Properties> properties) {
-       this.properties =properties;
+     }
+     @Override
+     public boolean onOptionsItemSelected(MenuItem item) {
+         // Handle action bar item clicks here. The action bar will
+         // automatically handle clicks on the Home/Up button, so long
+         // as you specify a parent activity in AndroidManifest.xml.
+         int id = item.getItemId();
 
-        }
+         //noinspection SimplifiableIfStatement
+         if (id == R.id.action_settings) {
+             return true;
+         }
 
-        @Override
-        public void onAttachedToRecyclerView(RecyclerView recyclerView) {
-            super.onAttachedToRecyclerView(recyclerView);
-        }
-
-
-        @Override
-        public RVAdapter.PersonViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
-
-            View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.fragment_all_listing, viewGroup, false);
-            PersonViewHolder pvh = new PersonViewHolder(v);
-            return pvh;
-        }
-
-        @Override
-        public void onBindViewHolder(RVAdapter.PersonViewHolder holder, int i) {
-
-            holder.textView.setText(properties.get(i).t);
-            holder.textView2.setText(stories.get(i).location);
-            holder.imageView.setImageResource(stories.get(i).imageId);
-            final Context context=  holder.cv.getContext();
-            final String name = String.valueOf(i);
-            holder.cv.setOnClickListener(new View.OnClickListener() {
-
-                @Override
-                public void onClick(final View v) {
-
-                    Toast.makeText(context, "you selected cardview at index:" + name, Toast.LENGTH_SHORT).show();
-
-                }
-            });
-        }
-
-
-
-
-        @Override
-        public int getItemCount() {
-            return properties.size();
-        }
+         return super.onOptionsItemSelected(item);
+     }
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -157,7 +94,7 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.PersonViewHolder> 
      */
     // TODO: Rename and change types and number of parameters
     public static AllListingFragment newInstance(String param1, String param2) {
-        AllListingFragment fragment = new AllListingFragment();
+        AllListingFragment fragment = new AllListingFragmentBuilder().createAllListingFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -197,13 +134,13 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.PersonViewHolder> 
         if (mListener != null) {
             mListener.onFragmentInteraction(uri);
         }
-    }
 
+    }
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
         try {
-            mListener = (OnFragmentInteractionListener) activity;
+            mListener = (ListingDetailFragment.OnFragmentInteractionListener) activity;
         } catch (ClassCastException e) {
             throw new ClassCastException(activity.toString()
                     + " must implement OnFragmentInteractionListener");
