@@ -67,6 +67,7 @@ class RVAdapter extends RecyclerView.Adapter<RVAdapter.PersonViewHolder> {
             holder.textView2.setText(properties.get(i).location);
             holder.imageView.setImageResource(properties.get(i).imageId);
             final Context context=  holder.cv.getContext();
+
             final String name = String.valueOf(i);
             holder.cv.setOnClickListener(new View.OnClickListener() {
 
