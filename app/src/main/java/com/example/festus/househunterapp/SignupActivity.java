@@ -1,6 +1,7 @@
 package com.example.festus.househunterapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -12,7 +13,7 @@ import android.widget.Button;
 public class SignupActivity extends ActionBarActivity {
  Button hunterbtn;
     Button agentbtn;
-    Context context;
+    Context context =(Context) getBaseContext();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +23,9 @@ public class SignupActivity extends ActionBarActivity {
         hunterbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(context,usersearchpage.class);
+                startActivity(intent);
+                finish();
 
             }
         });
@@ -30,7 +33,9 @@ public class SignupActivity extends ActionBarActivity {
         agentbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent i = new Intent(context,caretaker.class);
+                startActivity(i);
+                finish();
             }
         });
     }
