@@ -54,9 +54,9 @@ public class AllListingFragment extends Fragment {
          properties = new ArrayList<>();
          properties.add(new com.example.festus.househunterapp.Properties("Tyson properties", "2 bedrooms", R.drawable.img1));
          properties.add(new com.example.festus.househunterapp.Properties("kirichwa heights", "5 bedrooms", R.drawable.img2));
-         properties.add(new com.example.festus.househunterapp.Properties("Cinderella", "A story is told of a fare lady ...", R.drawable.img3));
-         properties.add(new com.example.festus.househunterapp.Properties("The tortoise", "This story is about ...", R.drawable.img4));
-         properties.add(new com.example.festus.househunterapp.Properties("The three sisters", "IN the village of Kinga there ..", R.drawable.img5));
+         properties.add(new com.example.festus.househunterapp.Properties("moringa heihts", "4 bedrooms apartments", R.drawable.img3));
+         properties.add(new com.example.festus.househunterapp.Properties("lare properties", "bedsitters", R.drawable.img4));
+         properties.add(new com.example.festus.househunterapp.Properties("wa mathu investments","3 bedrooms", R.drawable.img5));
 
 
 
