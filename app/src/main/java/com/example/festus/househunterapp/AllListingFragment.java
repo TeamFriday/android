@@ -26,18 +26,21 @@ import java.util.ArrayList;
 public class AllListingFragment extends Fragment {
      private RecyclerView rv;
      private ArrayList<Properties> properties;
+     public AllListingFragment(){
+
+     }
      @Override
      public View onCreateView(LayoutInflater inflater, ViewGroup container,
                               Bundle savedInstanceState) {
          // Inflate the layout for this fragment
-         return inflater.inflate(R.layout.fragment_all_listing, container, false);
-     }
-     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-         super.onActivityCreated(savedInstanceState);
-         rv = (RecyclerView) getActivity().findViewById(R.id.rv);
-         rv.setLayoutManager(new LinearLayoutManager(getActivity()));
+         View rootView = inflater.inflate(R.layout.fragment_all_listing, container, false);
+         rv = (RecyclerView) rootView.findViewById(R.id.rv);
+         rv.setHasFixedSize(true);
+         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
+         rv.setLayoutManager(layoutManager);
          initializeData();
          initializeAdapter();
+         return rootView;
  }
 
      private void initializeAdapter() {
