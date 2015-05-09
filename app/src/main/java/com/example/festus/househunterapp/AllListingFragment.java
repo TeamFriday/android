@@ -25,31 +25,7 @@ import java.util.ArrayList;
  */
 public class AllListingFragment extends Fragment {
      private RecyclerView rv;
-     private ArrayList<com.example.festus.househunterapp.Properties> properties;
-
-
-    /* private OnFragmentInteractionListener mListener;*/
-
-     /**
-      * Use this factory method to create a new instance of
-      * this fragment using the provided parameters.
-      *
-      * @param param1 Parameter 1.
-      * @param param2 Parameter 2.
-      * @return A new instance of fragment AllListingFragment.
-      */
-     // TODO: Rename and change types and number of parameters
-     public static AllListingFragment newInstance(String param1, String param2) {
-         AllListingFragment fragment = new AllListingFragmentBuilder().createAllListingFragment();
-         Bundle args = new Bundle();
-         return fragment;
-     }
-
-     public AllListingFragment() {
-         // Required empty public constructor
-     }
-
-
+     private ArrayList<Properties> properties;
      @Override
      public View onCreateView(LayoutInflater inflater, ViewGroup container,
                               Bundle savedInstanceState) {
