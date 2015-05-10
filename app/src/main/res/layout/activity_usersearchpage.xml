@@ -9,111 +9,99 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:orientation="vertical"
     tools:context="com.example.festus.househunterapp.usersearchpage">
-<LinearLayout
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="WELCOME!PLEASE TELL US WHAT YOU ARE LOOKING FOR!"/>
-</LinearLayout>
-    <LinearLayout
+        android:text="WELCOME!PLEASE TELL US WHAT YOU ARE LOOKING FOR!"
+        android:layout_gravity="center"
+        android:id="@+id/textView"
+        android:layout_below="@+id/editText1"/>
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="20dp">
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Location"
+        android:id="@+id/textView1"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
 
-
-        <TextView
-            android:text="Location "
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="30" />
-
-        <EditText
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:text="Enter your location"
-
-            android:layout_weight="70"
-            />
-    </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_horizontal"
-            android:layout_marginTop="20dp">
-
-            <TextView
-                android:text="budget"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="30"/>
-            <EditText
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:inputType="text"
-                android:text="enter your budget"
-
-                android:layout_weight="70"
-                />
-        </LinearLayout>
-
-    <LinearLayout
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="20dp">
+        android:text="Enter your prefferd loacation"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
 
-        <TextView
-            android:text="size"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="30"/>
-        <EditText
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:text="enter the size of the space"
 
-            android:layout_weight="70"
-            />
-    </LinearLayout>
-    <LinearLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="20dp">
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Budget"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/editText1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
 
-        <TextView
-            android:text="Additional Info"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="30"/>
-        <EditText
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:inputType="text"
-            android:text="Additional preferences"
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your budget"
+        android:ems="10"
+        android:id="@+id/editText1"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
 
-            android:layout_weight="70"
-            />
-    </LinearLayout>
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="size"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your preffered space size"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Additional info"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/editText3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add any other info"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="SUBMIT"/>
-</LinearLayout>
+        android:text="SUBMIT"
+        android:id="@+id/button"
+        android:background="#ff0ed3ff"
+        android:layout_marginTop="30dp"/>
+
 
 </LinearLayout>
