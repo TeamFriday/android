@@ -10,11 +10,13 @@
     tools:context="com.example.festus.househunterapp.Addlistings"
     android:orientation="vertical">
 
-    <TextView android:text="Add Listing"
+    <TextView android:text="ADD LISTINGS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:id="@+id/textView"/>
+        android:id="@+id/textView"
+        android:textSize="20dp"
+        />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
