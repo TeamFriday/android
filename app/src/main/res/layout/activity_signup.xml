@@ -13,7 +13,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Enter Your First Name "
         android:id="@+id/textView3"
-        android:background="#"
+
         android:layout_alignParentTop="true"
         />
 
@@ -94,10 +94,11 @@
         android:text="Register as a house hunter"
         android:layout_marginTop="50dp"
         android:id="@+id/button"
+        android:background="#48d1cc"
         android:layout_below="@+id/editText4"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:background="#ff0ed3ff" />
+         />
 
     <Button
         android:layout_width="wrap_content"
@@ -110,7 +111,7 @@
         android:layout_alignEnd="@+id/button"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:background="#ffff4c17" />
+        android:background="#f37735" />
 
 
 </RelativeLayout>

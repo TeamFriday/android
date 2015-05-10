@@ -10,94 +10,83 @@
     android:orientation="vertical"
     tools:context="com.example.festus.househunterapp.usersearchpage">
 
-    <LinearLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="20dp">
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enter The Location To Search"
+        android:id="@+id/textView1"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true" />
 
-
-        <TextView
-            android:text="Location "
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="30" />
-
-        <EditText
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:text="Enter your location"
-
-            android:layout_weight="70"
-            />
-    </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_horizontal"
-            android:layout_marginTop="20dp">
-
-            <TextView
-                android:text="budget"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="30"/>
-            <EditText
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:inputType="text"
-                android:text="enter your budget"
-
-                android:layout_weight="70"
-                />
-        </LinearLayout>
-
-    <LinearLayout
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="20dp">
+        android:inputType="text"
+        android:hint="Karen"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true" />
 
-        <TextView
-            android:text="size"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="30"/>
-        <EditText
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:text="enter the size of the space"
-
-            android:layout_weight="70"
-            />
-    </LinearLayout>
-    <LinearLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="20dp">
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enter Your Budget"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true" />
 
-        <TextView
-            android:text="Additional Info"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="30"/>
-        <EditText
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:inputType="text"
-            android:text="Additional preferences"
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="10000"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true" />
 
-            android:layout_weight="70"
-            />
-    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enter The Size Of The House"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:hint="2 bedrooms"
+        android:id="@+id/editText3"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp">
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_weight="20"
+        android:textColor="#ffffff"
+        android:text="Submit"
+        android:id="@+id/submit"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#ffff262c" />
 
 </LinearLayout>
+    </LinearLayout>
