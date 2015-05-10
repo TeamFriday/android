@@ -22,6 +22,11 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label="@string/title_activity_login" >
+            </activity>
+        <activity
             android:name=".usersearchpage"
             android:label="@string/title_activity_usersearchpage" >
         </activity>
