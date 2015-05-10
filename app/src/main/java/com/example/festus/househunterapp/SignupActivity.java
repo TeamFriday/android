@@ -23,7 +23,7 @@ public class SignupActivity extends ActionBarActivity {
         hunterbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context,usersearchpage.class);
+                Intent intent = new Intent(SignupActivity.this,usersearchpage.class);
                 startActivity(intent);
                 finish();
 
@@ -33,7 +33,7 @@ public class SignupActivity extends ActionBarActivity {
         agentbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(context,caretaker.class);
+                Intent i = new Intent(SignupActivity.this,caretaker.class);
                 startActivity(i);
                 finish();
             }

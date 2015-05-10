@@ -1,17 +1,31 @@
 package com.example.festus.househunterapp;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
 public class usersearchpage extends ActionBarActivity {
-
+ Button submit;
+    Context context = (Context)getBaseContext();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_usersearchpage);
+        submit=(Button)findViewById(R.id.button);
+        submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent inte = new Intent(usersearchpage.this,MainActivity.class);
+                startActivity(inte);
+                finish();
+            }
+        });
     }
 
 

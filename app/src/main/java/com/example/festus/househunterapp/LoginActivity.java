@@ -1,17 +1,44 @@
 package com.example.festus.househunterapp;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
 public class LoginActivity extends ActionBarActivity {
-
+    Button signup;
+    Button login;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        signup= (Button)findViewById(R.id.signup);
+        login=(Button)findViewById(R.id.send);
+        signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(LoginActivity.this,SignupActivity.class);
+                startActivity(i);
+
+                // close this activity
+                finish();
+
+            }
+        });
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(LoginActivity.this,usersearchpage.class);
+                startActivity(i);
+
+                // close this activity
+                finish();
+            }
+        });
     }
 
     @Override
