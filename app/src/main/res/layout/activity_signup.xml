@@ -13,7 +13,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Enter Your First Name "
         android:id="@+id/textView3"
-        android:background="#"
+
         android:layout_alignParentTop="true"
         />
 
