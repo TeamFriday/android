@@ -7,11 +7,17 @@ import android.view.MenuItem;
 
 
 public class MainActivity extends ActionBarActivity {
-
+    AllListingFragment fragment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        fragment = new AllListingFragment();
+        if (savedInstanceState == null) {
+            getFragmentManager().beginTransaction()
+                    .add(R.id.container, fragment)
+                    .commit();
+        }
     }
 
     @Override

@@ -1,50 +1,49 @@
 package com.example.festus.househunterapp;
 
+import android.content.Context;
 import android.content.Intent;
-import android.os.Handler;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
-public class SplashActivity extends ActionBarActivity {
-
-    //splash screen time
-    private static int SPLASH_DURATION = 3000;
+public class SignupActivity extends ActionBarActivity {
+ Button hunterbtn;
+    Button agentbtn;
+    Context context =(Context) getBaseContext();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash);
-
-        Log.i("RUN", "run a mile");
-
-        new Handler().postDelayed(new Runnable() {
-
-            /*
-             * Showing splash screen with a timer. This will be useful when you
-             * want to show case your app logo / company
-             */
-
+        setContentView(R.layout.activity_signup);
+        hunterbtn = (Button) findViewById(R.id.button);
+        hunterbtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void run() {
-                // This method will be executed once the timer is over
-                // Start your app main activity
-                Intent i = new Intent(SplashActivity.this, MainActivity.class);
-                startActivity(i);
+            public void onClick(View v) {
+                Intent intent = new Intent(context,usersearchpage.class);
+                startActivity(intent);
+                finish();
 
-                // close this activity
+            }
+        });
+        agentbtn = (Button)findViewById(R.id.button2);
+        agentbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(context,caretaker.class);
+                startActivity(i);
                 finish();
             }
-        }, SPLASH_DURATION);
+        });
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_splash, menu);
+        getMenuInflater().inflate(R.menu.menu_signup, menu);
         return true;
     }
 
