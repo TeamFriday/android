@@ -49,6 +49,7 @@
         android:layout_height="wrap_content"
         android:text="Click Here To Sign_up"
         android:id="@+id/signup"
+        android:textColor="#ffffff"
         android:layout_below="@+id/textView10"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
@@ -57,7 +58,8 @@
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        app:cardElevation="@dimen/cardview_default_radius"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="5dp"
         android:layout_below="@+id/signup"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -73,7 +75,7 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Login"
-            android:textColor="#ffffff"
+
             android:layout_marginLeft="140dp"
             android:id="@+id/textView11"
             android:layout_alignTop="@+id/view"
@@ -89,7 +91,7 @@
                 android:layout_weight="10"
                 android:layout_height="fill_parent"
                 android:gravity="center"
-                android:textColor="#ffffff"
+
                 android:text="username:"
                 android:layout_gravity="center_horizontal" />
 
@@ -114,7 +116,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="10"
-                android:textColor="#ffffff"
+
                 android:layout_height="fill_parent"
                 android:gravity="center"
                 android:text="password:"
@@ -141,7 +143,7 @@
                 android:layout_weight="10"
                 android:layout_height="fill_parent"
                 android:gravity="center"
-                android:textColor="#ffffff"
+
 
                 android:text="confirm password:"
                 android:layout_gravity="center_horizontal" />
