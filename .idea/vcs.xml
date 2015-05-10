@@ -6,10 +6,14 @@
 =======
     <mapping directory="" vcs="Git" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+=======
+>>>>>>> 1ea0654119c5fe8da2287d5cc8109c36bf2eddd0
+>>>>>>> 00deba773d125944b8a1863837614dc2a81b4803
 =======
 >>>>>>> 1ea0654119c5fe8da2287d5cc8109c36bf2eddd0
 >>>>>>> 00deba773d125944b8a1863837614dc2a81b4803
