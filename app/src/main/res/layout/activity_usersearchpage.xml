@@ -13,7 +13,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TELL US WHAT YOU ARE LOOKING FOR!"
+        android:text="WHAT YOU ARE LOOKING FOR!"
         android:layout_gravity="center"
         android:id="@+id/textView"
         android:layout_below="@+id/editText1"
@@ -32,7 +32,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Enter your prefferd loacation"
+        android:hint="Enter your preferred location"
         android:ems="10"
         android:id="@+id/editText"
         android:layout_below="@+id/textView2"
@@ -52,7 +52,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Enter your budget"
+        android:hint="Enter your budget"
         android:ems="10"
         android:id="@+id/editText1"
         android:layout_below="@+id/textView2"
@@ -71,7 +71,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Enter your preffered space size"
+        android:hint="Enter your preferred space size"
         android:ems="10"
         android:id="@+id/editText2"
         android:layout_below="@+id/textView2"
@@ -89,7 +89,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add any other info"
+        android:hint="Add any other info"
         android:ems="10"
         android:id="@+id/editText3"
         android:layout_below="@+id/button"
