@@ -31,7 +31,7 @@
             android:label="@string/title_activity_usersearchpage" >
         </activity>
         <activity
-            android:name=".caretaker"
+            android:name=".Caretaker"
             android:label="@string/title_activity_caretaker" >
         </activity>
         <activity
@@ -41,6 +41,14 @@
         <activity
             android:name=".SignupActivity"
             android:label="@string/title_activity_signup" >
+        </activity>
+        <activity
+            android:name=".caretakerrecycler"
+            android:label="@string/title_activity_caretakerrecycler" >
+        </activity>
+        <activity
+            android:name=".recyclercaretaker"
+            android:label="@string/title_activity_recyclercaretaker" >
         </activity>
     </application>
 
