@@ -17,7 +17,7 @@ public class usersearchpage extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_usersearchpage);
-        submit=(Button)findViewById(R.id.submit);
+        submit=(Button)findViewById(R.id.button);
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

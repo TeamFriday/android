@@ -11,15 +11,6 @@
     tools:context="com.example.festus.househunterapp.usersearchpage">
 
     <TextView
-<<<<<<< HEAD
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Enter The Location To Search"
-        android:id="@+id/textView1"
-        android:layout_below="@+id/editText"
-        android:layout_centerHorizontal="true" />
-=======
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TELL US WHAT YOU ARE LOOKING FOR!"
@@ -37,20 +28,10 @@
         android:layout_below="@+id/editText"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"/>
->>>>>>> acb772fc7837e3b9105a784a80ed6ba31666e36c
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
-        android:inputType="text"
-        android:hint=" example Karen"
-        android:ems="10"
-        android:id="@+id/editText"
-        android:layout_below="@+id/textView3"
-        android:layout_centerHorizontal="true" />
-
-=======
         android:text="Enter your prefferd loacation"
         android:ems="10"
         android:id="@+id/editText"
@@ -58,65 +39,29 @@
         android:layout_centerHorizontal="true" />
 
 
->>>>>>> acb772fc7837e3b9105a784a80ed6ba31666e36c
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-<<<<<<< HEAD
-        android:text="Enter Your Budget"
-        android:id="@+id/textView4"
-        android:layout_below="@+id/editText"
-        android:layout_centerHorizontal="true" />
-=======
         android:text="Budget"
         android:id="@+id/textView2"
         android:layout_below="@+id/editText1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"/>
->>>>>>> acb772fc7837e3b9105a784a80ed6ba31666e36c
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
-        android:inputType="number"
-        android:hint=" example 10000"
-        android:ems="10"
-        android:id="@+id/editText2"
-        android:layout_below="@+id/textView4"
-=======
         android:text="Enter your budget"
         android:ems="10"
         android:id="@+id/editText1"
         android:layout_below="@+id/textView2"
->>>>>>> acb772fc7837e3b9105a784a80ed6ba31666e36c
         android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-<<<<<<< HEAD
-        android:text="Enter The Size Of The House"
-        android:id="@+id/textView5"
-        android:layout_below="@+id/editText2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"
-        android:ems="10"
-        android:hint=" example 2 bedrooms"
-        android:id="@+id/editText3"
-        android:layout_below="@+id/textView5"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-
-=======
         android:text="size"
         android:id="@+id/textView3"
         android:layout_below="@+id/editText2"
@@ -158,24 +103,6 @@
         android:id="@+id/button"
         android:background="#ff0ed3ff"
         android:layout_marginTop="30dp"/>
->>>>>>> acb772fc7837e3b9105a784a80ed6ba31666e36c
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="30dp">
-    <Button
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_weight="20"
-        android:textColor="#ffffff"
-        android:text="Submit"
-        android:id="@+id/submit"
-        android:layout_gravity="center_horizontal"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:background="#ffff262c" />
 
 </LinearLayout>
-    </LinearLayout>
