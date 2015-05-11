@@ -77,8 +77,7 @@ class RVAdapter extends RecyclerView.Adapter<RVAdapter.PersonViewHolder> {
 
                     Toast.makeText(context, "you selected cardview at index:" + name, Toast.LENGTH_SHORT).show();
 
-                    Intent inte = new Intent(v.getContext(),caretaker.class);
-                    v.getContext().startActivity(inte);
+
 
                 }
             });
