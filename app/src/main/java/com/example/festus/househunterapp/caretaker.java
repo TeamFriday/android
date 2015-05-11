@@ -77,8 +77,8 @@ public class Caretaker extends RecyclerView.Adapter<Caretaker.ViewHolder> {
         public ViewHolder(View itemView) {
             super(itemView);
 
-            imgThumbnail = (ImageView)itemView.findViewById(R.id.);
-            listingHouses = (TextView)itemView.findViewById(R.id.);
+            imgThumbnail = (ImageView)itemView.findViewById(R.id.imgv1);
+            listingHouses = (TextView)itemView.findViewById(R.id.textView13);
         }
     }
 }

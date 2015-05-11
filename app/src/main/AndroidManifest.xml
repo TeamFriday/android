@@ -47,10 +47,7 @@
             android:name=".caretakerrecycler"
             android:label="@string/title_activity_caretakerrecycler" >
         </activity>
-        <activity
-            android:name=".recyclercaretaker"
-            android:label="@string/title_activity_recyclercaretaker" >
-        </activity>
+
     </application>
 
 </manifest>
