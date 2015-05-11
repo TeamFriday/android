@@ -12,4 +12,5 @@
     <string name="title_activity_signup">SignupActivity</string>
     <string name="title_activity_caretakerrecycler">caretakerrecycler</string>
     <string name="title_activity_recyclercaretaker">recyclercaretaker</string>
+    <string name="title_activity_property_agent">PropertyAgent</string>
 </resources>
