@@ -33,7 +33,7 @@ public class SignupActivity extends ActionBarActivity {
         agentbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(SignupActivity.this,Caretaker.class);
+                Intent i = new Intent(SignupActivity.this,LoginActivity.class);
                 startActivity(i);
                 finish();
             }
