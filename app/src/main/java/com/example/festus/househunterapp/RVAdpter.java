@@ -1,6 +1,7 @@
 package com.example.festus.househunterapp;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.support.v7.widget.CardView;
@@ -75,6 +76,9 @@ class RVAdapter extends RecyclerView.Adapter<RVAdapter.PersonViewHolder> {
                 public void onClick(final View v) {
 
                     Toast.makeText(context, "you selected cardview at index:" + name, Toast.LENGTH_SHORT).show();
+
+                    Intent inte = new Intent(v.getContext(),caretaker.class);
+                    v.getContext().startActivity(inte);
 
                 }
             });

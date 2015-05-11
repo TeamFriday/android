@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <resources>
     <string name="app_name">HousehunterApp</string>
 
@@ -13,3 +14,18 @@
     <string name="title_activity_caretakerrecycler">caretakerrecycler</string>
     <string name="title_activity_recyclercaretaker">recyclercaretaker</string>
 </resources>
+=======
+<resources>
+    <string name="app_name">HousehunterApp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash">HouseHunter</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_usersearchpage">property search</string>
+    <string name="title_activity_caretaker">caretaker</string>
+    <string name="title_activity_addlistings">Addlistings</string>
+    <string name="title_activity_signup">SignupActivity</string>
+</resources>
+>>>>>>> 2070f7c09114d228fd0e594b7d8a48e89403a460
