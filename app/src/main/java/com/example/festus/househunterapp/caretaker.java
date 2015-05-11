@@ -57,11 +57,11 @@ public class Caretaker extends RecyclerView.Adapter<Caretaker.ViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(Caretaker.ViewHolder holder, int position) {
+    public void onBindViewHolder(Caretaker.ViewHolder holder, int i) {
 
         Listings property = mItems.get(i);
-        viewHolder.listingHouses.setText(property.getName());
-        viewHolder.imgThumbnail.setImageResource(property.getThumbnail());
+        holder.listingHouses.setText(property.getName());
+        holder.imgThumbnail.setImageResource(property.getThumbnail());
 
     }
 
@@ -77,8 +77,8 @@ public class Caretaker extends RecyclerView.Adapter<Caretaker.ViewHolder> {
         public ViewHolder(View itemView) {
             super(itemView);
 
-            imgThumbnail = (ImageView)itemView.findViewById(R.id.img_thumbnail);
-            listingHouses = (TextView)itemView.findViewById(R.id.listing_Houses);
+            imgThumbnail = (ImageView)itemView.findViewById(R.id.);
+            listingHouses = (TextView)itemView.findViewById(R.id.);
         }
     }
 }

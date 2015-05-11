@@ -34,17 +34,17 @@
         android:orientation="horizontal">
 
         <TextView
-            android:text="3-bedroomed apartment Kileleshwa"
             android:layout_width="0dp"
             android:layout_weight="30"
+            android:id="@+id/textview13"
             android:layout_height="fill_parent"
             />
 
         <ImageView
             android:layout_width="0dp"
+            android:id="@+id/imgvl"
             android:layout_weight="70"
             android:layout_height="fill_parent"
-            android:src="@drawable/img1"
             android:layout_gravity="left"/>
 
     </LinearLayout>
