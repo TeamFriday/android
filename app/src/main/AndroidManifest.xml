@@ -46,6 +46,10 @@
             android:name=".PropertyAgent"
             android:label="@string/title_activity_property_agent" >
         </activity>
+        <activity
+            android:name=".InfoActivity"
+            android:label="@string/title_activity_info" >
+        </activity>
     </application>
 
 </manifest>
