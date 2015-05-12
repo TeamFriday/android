@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:padding="10dp"
     android:layout_height="match_parent"
-    android:background=""
     android:orientation="vertical">
 
     <TextView
@@ -45,6 +44,14 @@
         android:layout_height="wrap_content"
         android:text="Sign In"
         android:id="@+id/send"
+        android:background="#add43c"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="create account"
+        android:id="@+id/signup"
         android:background="#add43c"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="30dp"/>
